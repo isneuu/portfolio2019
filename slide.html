@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="red"></div>
+</body>
+</html>
+<style type="text/css">
+	.red {
+    height: -webkit-fill-available;
+    overflow:hidden;
+    position: fixed;
+    background-image: url(images/slide.jpg);
+    width: 3300px;
+    margin: -8px;
+}
+</style>
+<script type="text/javascript">
+// 	$(document).ready(function(){       
+//     var scroll_pos = 0;
+//     $(document).scroll(function() {
+//         scroll_pos = $(this).scrollTop();
+//         if (scroll_pos > 150) {
+//             scroll_pos = 150;
+//         };
+//         $(".red").animate({
+//             width : (75+0.75*scroll_pos)+"px"
+//         });
+//     });
+// });
+$(".red").on("scroll", function(){
+$(".red").animate({ marginLeft: '-150px', opacity: 1 }, 2000);
+});
+
+// 	$(window).scroll(function() {
+//     var requiredOffset = 300;
+
+//     // Between 0 and 1 (inclusive)
+//     var percentage = Math.min(1, $(window).scrollTop() / requiredOffset);
+
+//     // Starts at requiredOffset and goes down to 0        
+//     var marginTop = requiredOffset * (1 - percentage);
+
+//     // Opacity of frame
+//     var alpha = percentage;
+
+//     $(".red").css('margin-left', '-' + marginTop);
+//     // $(".frame").css('background-color', 'rgba(0,0,0,' + alpha + ')');
+// });
+</script>

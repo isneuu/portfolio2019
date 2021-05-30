@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Siddhartha Neupane</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="icon" href="images/favicon.png" sizes="16x16 32x32" type="image/png"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<center>
+	<div class="main">
+	<div class="bio">
+		<div class="photo_c"><img src="images/me2.jpg" class="port_img">
+		<div class="f_name">SIDDHARTHA NEUPANE</div>
+		<div class="triangle"></div>
+		<div class="bio_2" >I like good and beautiful.</div></div>
+			<div class="brw_title">BROWSE</div>
+			<ul class="skills">
+				<li class="sk">FULL STACK WEB DESIGNS</li>
+				<li class="sk">BLOG</li>
+				<li class="sk">LEADERSHIP</li>
+				<li class="sk">STARTUPS</li>
+			</ul>
+
+	</div>
+
+
+	<img src="images/2.png" class="float" id="float2">
+<img src="images/3.png" class="float" id="float3">
+<img src="images/4.png" class="float" id="float4">
+<img src="images/5.png" class="float" id="float5">
+<img src="images/6.png" class="float" id="float6">
+	<div class="drop"></div>
+		<div class="drop2"></div>
+	<div class="title_main" id=tm>
+		<div class="image_me">
+<?xml version="1.0" ?><svg class="img_profile" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"/><path d="M0-.75h48v48h-48z" fill="none"/></svg>
+			<!-- <img src="images/down.svg" class="img_profile circular"> --></div> <div class="name_me">Discover me</div>
+	</div>
+
+	
+	<div class="main_bottom">
+		<div class="quote_m">
+			<div class="quote_l">Trying to make this world a <u>happier</u> place.</div>
+		</div>
+	
+	</div>
+
+	<div class="title_bottom">
+		<div class="social">
+		<img class="facebook small"  src="images/svg/facebook.svg"></img>
+		<img class="twitter small" src="images/svg/twitter.svg"></img>
+		<img class="instagram small" src="images/svg/instagram.svg"></img>
+		<img class="linkedin small" src="images/svg/linkedin.svg"></img>
+		<img class="behance small" src="images/svg/behance.svg"></img>
+		</div>
+	All right reserved 2019</div>
+
+	<div class="bottom_flow"></div>
+<!-- <div class="skills">
+	<div class="title_bottom">Discover me</div>
+	<button class="ski">Leadership</button>
+	<button class="ski">UI Design</button>
+	<button class="ski">Front End Web Development</button>
+	<button class="ski">Blog</button>			
+</div> -->
+</div>
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+		$(document).ready(function(){
+//facebook
+$(".facebook").on("click", function(){
+window.open("https://facebook.com");
+});
+
+//twitter
+$(".twitter").on("click", function(){
+window.open("https://twitter.com");
+});
+
+
+//instagram
+$(".instagram").on("click", function(){
+window.open("https://instagram.com");
+});
+
+//linkedin
+$(".linkedin").on("click", function(){
+window.open("https://linkedin.com");
+});
+
+//behance
+$(".behance").on("click", function(){
+window.open("https://behance.com");
+});
+
+
+
+
+
+			var slide_btn = $("div#tm");
+			var port = $("div.bio");
+
+			slide_btn.on("click", function(){
+				if(slide_btn.hasClass("title_main")){
+				port.animate(
+    {
+        width: "+=350",
+        opacity: 1
+    },
+ 
+    // Duration
+    300,
+ 
+    // Callback to invoke when the animation is finished
+    function() {
+    
+	$(".bio").children().fadeIn(400);
+$(".f_name ").delay(800).fadeIn();
+$(".triangle ").delay(800).fadeIn();
+$(".port_img").css("transform", "scale(1.1)");
+
+    });
+					$(".name_me").text("Back");
+					$(".name_me").css("color", "white");
+					$("#tm").removeClass("title_main");
+					$(".img_profile").css("fill", "white");
+					$("#tm").addClass("title_main2");
+    				$(".img_profile").css("webkitTransform","rotate("+90+"deg)");
+
+				}
+
+				// if the slide is open
+				else{
+					$(".f_name ").delay(200).fadeOut();
+$(".triangle ").delay(200).fadeOut()
+$(".port_img").css("transform", "scale(1)");
+						$(".bio").children().fadeOut(100),				port.animate(
+    {
+        width: "-=350",
+        opacity: 1
+    },
+ 
+    // Duration
+    300,
+ 
+    // Callback to invoke when the animation is finished
+    function() {
+
+    $(".name_me").text("Discover me");
+					$(".name_me").css("color", "black");
+
+    });
+					
+					$("#tm").removeClass("title_main2");
+					$(".img_profile").css("fill", "Black");
+					$("#tm").addClass("title_main");
+    	$(".img_profile").css("webkitTransform","rotate("+0+"deg)");
+
+				}
+
+			});
+
+
+$(".sk").on("click", function(){
+
+				$("body").delay().animate(
+    {
+        width: "-=0",
+        opacity: 1
+    },
+ 
+    // Duration
+    400,
+    function(){
+    		
+			$(".main").animate(
+    {
+        width: "+=400",
+        opacity: 1
+    },
+ 
+    // Duration
+    400
+ 
+    // Callback to invoke when the animation is finished
+  );
+$(".title_main2").css("display", "none");
+
+    }
+ 
+    // Callback to invoke when the animation is finished
+  );
+				$(".float").fadeOut();
+			
+				$(".title_bottom").hide();
+				$(".main_bottom").hide();
+				
+				$(".bottom_flow").hide();
+				// $(".main").css("margin-right", "-300px");
+				// $(".title_main2").css("display", "none");
+			
+		$(".sk").off();
+		});
+
+
+		});
+
+
+</script>
+<style type="text/css">
+
+.triangle {
+    /* background: black; */
+    position: absolute;
+    z-index: 998;
+    display: block;
+    border: 10px solid #3c3c3c;
+    border-right: 20px solid #a9a9a900;
+    border-bottom: 20px solid #a9a9a900;
+    margin-left: 190px;
+    margin-top: -165px;
+    transform: rotate(225deg);
+}
+.f_name {
+    display: block;
+    color: white;
+    background: #3c3c3c;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    font-size: 18px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-left: 120px;
+    margin-top: -185px;
+    width: 265px;
+}
+.small:hover{
+	transform: scale(1.3);
+}
+.small{
+	cursor: pointer;
+	transition: all linear 200ms;
+	margin:5px;
+	height: 20px;
+	width: 20px;
+}
+.bio div{
+	display: none;
+}
+.bio ul{
+	display: none;
+}
+img.port_img {
+	height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 140px;
+    border: 8px solid white;
+    cursor: pointer;
+    transition: all linear 1300ms;
+}
+img.port_img:hover{
+
+    box-shadow: 3px 2px 14px 5px #3c3c3c3b;
+}
+
+.brw_title {
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    font-size: 13px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+li:hover{
+	    color: #232323;
+}
+li {
+	transition: all 250ms;
+	cursor: pointer;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: white;
+}
+ul.skills {
+    font-size: 15px;
+    text-align: left;
+    list-style: persian;
+}
+.bio_2 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.bio{
+	text-align: center;
+	font-family: Montserrat;
+	font-family: Montserrat, Sans serif;
+}
+#tm{
+	 transition: all linear 400ms;
+}
+.title_main2 {
+    display: inline-flex;
+    /* width: -webkit-fill-available; */
+    padding: 5px;
+    padding-right: 20px;
+    /* border-radius: 5px 6px 0px 0px; */
+    padding-top: 15px;
+    border-radius: 45px;
+    float: left;
+
+    color:white;
+    position: absolute;
+    margin-left: -400px;
+
+    z-index: 999;
+    -webkit-transition: box-shadow 400ms;
+}
+.title_main2:hover {
+    transition: box-shadow 400ms;
+    box-shadow: 0 0 0 0px #ffa7a7, 0 0 0 5px white;
+    background: #fb6249;
+}
+.bio {
+    width: 0px;
+    height: 610px;
+    background-color: #fb6249;
+    position: absolute;
+    box-shadow: 7px 3px 29px 0px #80808038;
+    margin: -40px;
+    border-radius: 5px;
+    z-index: 998;
+    /* display: none; */
+}	.float{
+		z-index: 99;
+	position: absolute;
+	}
+
+	#float3{
+margin-top: -200px;
+height: 25px;
+width: 25px;
+animation: moves 5s linear infinite;
+	}
+#float4 {
+    margin-top: 240px;
+    height: 35px;
+    width: 35px;
+    animation: moves 4s linear infinite;
+}
+#float3 {
+    margin-top: 140px;
+    height: 25px;
+    margin-left: 200px;
+    width: 25px;
+    animation: moves 5s linear infinite;
+}
+	#float5 {
+    margin-left: -200px;
+    margin-top: 230px;
+    height: 30px;
+    width: 30px;
+    animation: moveu 5s linear infinite;
+}
+#float6 {
+    margin-left: 150px;
+    height: 30px;
+    margin-top: 316px;
+    width: 30px;
+    animation: moves 7s linear infinite;
+}
+	#float2{
+height: 60px;
+width: 60px;
+animation: bug 5s linear infinite;
+	}
+
+
+
+@keyframes moves{
+	
+	50%{
+	
+transform: translateX(10px);
+
+	}
+	100%{
+
+}
+}
+@keyframes moveu{
+	
+	50%{
+	
+transform: translate(-10px, 10px);
+
+	}
+	100%{
+
+}
+}
+
+
+@keyframes bug{
+	
+	40%{
+			
+	}
+	50%{
+	
+		transform-origin:center;
+transform: scale(1.2);
+
+	}
+	60%{
+
+
+
+	}
+	100%{
+				transform-origin:center;
+		transform: scale(1);
+
+}
+}
+</style>

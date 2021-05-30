@@ -1,0 +1,306 @@
+.img_profile {
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    transition: all linear 400ms;
+    margin-top: -4px;
+    margin-right: 7px;
+}
+.circular{
+	border-radius: 100%;
+}
+.title_main {
+    display: inline-flex;
+    /* width: -webkit-fill-available; */
+    padding: 5px;
+   padding-right: 20px;
+    /* border-radius: 5px 6px 0px 0px; */
+    padding-top: 15px;
+    border-radius: 45px;
+    float: left;
+    position: absolute;
+        transition: all linear 400ms;
+    margin-left: -400px;
+    z-index: 999;
+        -webkit-transition: box-shadow 400ms;
+}
+.title_main:hover{
+	    box-shadow: 1px 1px 7px #e2e2e2;
+    
+}
+.rec_Ac {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Montserrat;
+    text-align: left;
+}
+.title_main:hover{
+
+    transition: box-shadow 400ms;
+    box-shadow: 0 0 0 1px #fafafa, 0 0 0 5px #eaeaea;
+    background: #fbfbfb;
+
+}
+.ski:hover{
+    -moz-transition: box-shadow 400ms;
+    -o-transition: box-shadow 400ms;
+  
+     -webkit-transition: all 400ms;
+    background: linear-gradient(to left,#ffffff, #ffffff);
+    transform: scale(1.05);
+    color: #f7514e;
+    box-shadow: 0 0 0 0px #F44336, 0 0 0 5px #ff7246;
+}
+    .ski:active {
+    	transform: scale(1.1);
+    -moz-transition: box-shadow 400ms;
+    -o-transition: box-shadow 400ms;
+    -webkit-transition: box-shadow 400ms;
+
+     transition: all 400ms;
+    box-shadow: 0 0 0 4px #c7c7c7, 0 0 0 21px rgba(128, 128, 128, 0.18);
+}
+
+button.ski {
+	cursor: pointer;
+	outline: none;
+    padding: 10px 20px;
+    border: 0px solid grey;
+    color: white;
+    background: none;
+    border-radius: 33px;
+      -webkit-transition: all 400ms;
+    margin-left: 20px;
+    background: linear-gradient(to right,#ff7346, #f64e4e);
+    font-size: 14px;
+    font-weight: 600;
+     transform: perspective(100px) rotateZ(360deg);
+    letter-spacing: 0.8px;
+        transition: all 400ms;
+    font-family: Montserrat;
+}
+img.img_dots {
+    position: absolute;
+    width: 260px;
+    margin-left: -180px;
+    margin-top: 85px;
+}
+.name_me {
+	cursor: pointer;
+    /* margin-top: 10px; */
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    /* margin-left: 10px; */
+    float: left;
+    border-image: aquamarine;
+    color: #3c3c3c;
+}
+.quote_l {
+    font-family: Montserrat;
+}
+.ch_date {
+    font-family: Montserrat;
+    font-size: 15px;
+    padding-left: 11px;
+}
+.main_bottom {
+}
+.title_bottom {
+    padding: 10px;
+    font-size: 12px;
+    font-family: Montserrat;
+    /* width: 120px; */
+    margin-top: 80px;
+    /* border-right: 0px; */
+    /* border-top: 0px; */
+    margin-bottom: 10px;
+}
+body {
+    background: #fafafa;
+}
+.ch_title {
+    padding: 10px;
+    font-family: Montserrat;
+}
+.quote_m {
+    padding: 150px 40px;
+    font-size: 30px;
+    margin-top: 10px;
+    /* background: #fbfbfb; */
+    margin: 36px;
+    border-radius: 10px;
+}
+.latest_ch {
+    background: #fbfbfb;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: left;
+    border-left: 3px solid #4CAF50;
+}
+
+.fillbox {
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+    background: linear-gradient(to right,#ff7346, #f64e4e);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.main {
+    background: white;
+    animation-name: mainBorder;
+    animation-duration: 9s;
+height: 530px;
+transition-delay: 400ms;
+	transition: all linear 400ms;
+    animation-iteration-count: infinite;
+    width: 800px;
+    padding: 40px;
+    border: 0px solid #bdbdbd;
+    border-radius: 5px;
+    margin-top: 130px;
+
+        box-shadow: 3px 3px 66px gainsboro;
+}
+
+.bottom_flow {
+    height: 10px;
+    width: 70px;
+    position: absolute;
+    border-radius: 4px;
+    animation: flow 40s linear infinite;
+    z-index: 980;
+    background: linear-gradient(to right,#ff7346, #f64e4e);
+    margin-top: 20px;
+}/*
+.drop{
+height: 10px;
+    width: 30px;
+    position: absolute;
+    border-radius: 4px;
+    animation: bug 2s linear infinite;
+    z-index: 999;
+    background: linear-gradient(to right,#ff7346, #f64e4e);
+    margin-top: -40px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}*/
+@keyframes flow{
+	0%{
+		
+
+	}
+	12%{
+		width: 130px;
+	}
+	24%{
+		width: 160px;
+	}
+
+36%{
+	width: 130px;
+}
+		43%{
+width: 100px;
+
+	}
+	50% {
+margin-left: 750px;		width: 60px;
+	}
+
+	62%{
+width: 100px;
+		
+
+	}
+	74%{
+		width: 130px;
+	}
+	86%{
+		width: 80px;
+	}
+		100%{
+			width: 70px;
+margin-left: 0px;
+	}
+}
+
+/*#float1{
+    margin-left: 73px;	
+	animation-delay: 1s;
+	animation-timing-function: ease;
+}
+#float2{
+    margin-left: 210px;	
+	animation-delay: 5s;
+	animation-timing-function: ease-in;
+}
+#float3{
+    margin-left: 190px;	
+	animation-delay: 2s;
+		animation-timing-function: ease-out;
+}
+#float4{
+    margin-left: 130px;	
+	animation-delay: 2.5s;
+		animation-timing-function: ease-in-out;
+}
+#float5{
+    margin-left: 150px;	
+    	animation-delay: 6s;
+	animation-timing-function: ease-in;
+}
+#float6{
+	animation-delay: 2s;
+    margin-left: 170px;	
+    	animation-timing-function: ease-in;
+}
+img.float {
+    position: absolute;
+
+animation: mainBackground 9s infinite;
+/*animation-duration: 9s;
+bottom: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+/*- keyframes 
+@keyframes mainBackground{
+
+	0% {
+  bottom: 10px;
+}
+100% {
+  bottom: 1110px;
+
+}
+	
+}
+
+
+
+@keyframes mainBorder{
+0% {
+    border-color: #ff7246;
+}
+25% {
+    border-color: #ff7246;
+}
+50% {
+    border-color: #fb6549;
+}
+75% {
+    border-color: #f95a4b;
+}
+100% {
+    border-color: #f64f4e;
+}
+}*/
